@@ -1,0 +1,375 @@
+:root {
+    /* ============ ПЕРЕМЕННЫЕ ЦВЕТА ============ */
+    --color-font-main: #212121;
+    --color-font-head: #757575;
+    --color-font-footer: rgba(255, 255, 255, 0.6);
+    /* =============================== */
+    --color-background-another: #E5E5E5;
+    --color-background-team: #F5F4FA;
+    --color-background-footer: #2F303A;
+    /* =============================== */
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    /* =============================== */
+    --color-border-line: #ECECEC;
+    --color-borders-portfolio: #EEEEEE;
+    /* =============================== */
+    --color-logo-links-hover: #2196F3;
+    --color-button-hover: #188CE8;
+    /* ========================================== */
+}
+
+
+body {
+
+    color: var(--color-font-main);
+    background-color: var(--color-light);
+/* =============================== */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+/* ============= Типографика - ГЛОБАЛЬНАЯ Стилизация некоторых элементов ============= */
+
+/* ================ Скрытие заголовков (visually-hidden) ================ */
+.visually-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+
+/* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
+ и в Блок-секция_4 Наша команда (team) === */
+.section-titles {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+}
+
+
+/* --------- Убираем точки со ВСЕХ списков --------- */
+/* ul {list-style-type: none;} */
+.lists {list-style-type: none;}
+
+/* ------ Убираем подчеркивание со ВСЕХ ссылок ------ */
+/* a {text-decoration: none;} */
+.links {text-decoration: none;}
+
+/* --- Задаем ВСЕМ кнопкам тип курсора pointer ------ */
+.buttons {cursor: pointer;}
+
+/* _____________________________  К О Н Е Ц Типографика _____________________________ */
+
+
+
+
+
+/* ======================= Стилизация Шапки сайта (headline) ======================= */
+
+/* ============ Стилизация логотипа WebStudio in header ============ */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+   
+    color: var(--color-logo-links-hover);
+}
+
+/* == Замена цвета текста WebStudio (часть Studio - на черную) в header == */
+.logo-black {
+    color: var(--color-dark);
+}
+
+
+/* ==== Стилизация Кнопок Основного раздела навигации в header ===== */
+.nav-links {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color: inherit;
+}
+
+/* ==== Выделение цветом активной страници в header в (headline) ===== */
+.nav-links.activlink {
+    color: var(--color-button-hover);
+
+}
+
+
+/* ========= Стилизация Контакты (почта и телефон) в header ========= */
+.header-contacts-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--color-font-head);
+}
+
+/* ====  Hover & Focus на ссылках и Контактах (почта и телефон) в header === */
+.nav-links.activlink:hover,
+.nav-links.activlink:focus,
+
+.nav-links:hover,
+.nav-links:focus,
+
+.header-contacts-link:hover,
+.header-contacts-link:focus
+
+{color: var(--color-logo-links-hover);}
+
+/* _____________________________  К О Н Е Ц   (header) _____________________________ */
+
+
+
+
+
+
+
+/* ========================= Стилизация ОСНОВНОГО Блока (main)========================== */
+
+
+/* =================== Стилизация Блок-секции_1 ГЕРОЙ (hero) =================== */
+
+/* ============ Цвет фона в Блок-секции_1 ГЕРОЙ (hero) ============ */
+.hero {
+    background-color: var(--color-background-footer);
+}
+
+/* ============= Стилизация заголовка в ГЕРОЙ (hero-title) ======== */
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--color-light);
+}
+
+
+/* ========== Стилизация кнопки в ГЕРОЙ (hero-button) ========== */
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--color-light);
+    background-color: var(--color-logo-links-hover);
+}
+
+/* =============  Hover & Focus на кнопке в ГЕРОЙ ============= */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--color-button-hover);
+}
+
+/* _________________________  К О Н Е Ц   Блок-секции_1 ГЕРОЙ (hero) _________________________ */
+
+
+
+
+
+
+
+/* ======= Стилизация Блок-секция_2 Наши особенности (features) ======= */
+
+/* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
+.features-title {
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--color-font-main);
+   }
+
+/* ==== Стилизация Текста p в (в Наши особенности (features) ==== */
+.features-description {
+
+    color: var(--color-font-head);
+}
+
+/* ______________________  К О Н Е Ц Блок-секция_2 Наши особенности ______________________ */
+
+
+
+
+
+
+
+
+/* ============== Стилизация Блок-секция_3 Чем мы занимаемся (activities) ============== */
+
+/* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
+вынесен в Типографику === */
+
+
+/* ___________________  К О Н Е Ц Блок-секция_3 Чем мы занимаемся ______________________ */
+
+
+
+
+
+
+
+
+/* ===================== Стилизация Блок-секция_4 Наша команда (team) ===================== */
+
+/* === Стилизация Заголовка h2 в Блок-секция_4 Наша команда (team) 
+вынесен в Типографику === */
+
+/* =========== Цвет фона Блок-секция_4 Наша команда (team) =========== */
+.team {
+    background-color: var(--color-background-team);
+}
+
+/* ======= Заголовок h3 в Наша команда (team-item) > (team-name)  ======*/
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: #212121;
+}
+
+/* ========== Текст в Наша команда (team-item) > (team-position) ==========*/
+.team-position {
+    font-size: 16px;
+    line-height: 1.19;
+   
+    color: #757575;
+}
+
+/* ======= Цвет фона карточки члена команды (team-item) ======= */
+.team-item {
+    background-color: var(--color-light);
+}
+
+/* ___________________  К О Н Е Ц  Блок-секция_4 Наша команда ______________________ */
+
+/* ____________________ К О Н Е Ц  ОСНОВНОГО Блока (main) ____________________ */
+
+
+
+
+
+
+
+
+
+/* =============================== Стилизация footer =============================== */
+/* ====== Цвет фона в footer ====== */
+.footers {
+    background-color: var(--color-background-footer);
+}
+
+
+/* == Замена цвета текста WebStudio (часть Studio - на белую) в footer == */
+.logo-white {
+    color: var(--color-light);
+}
+
+
+/* ============= Стилизация ВСЕХ строк Блока АДРЕС в footer ============= */
+.addresses {
+    font-style: normal;
+        
+    color: var(--color-light);
+}
+
+/* == Изменение цвета шрифта (почта и телефон) в Блоке АДРЕС  в footer == */
+.footers-contact-link {
+    font-style: normal;
+    
+    color: var(--color-font-footer);
+}
+
+/* ======  Hover & Focus на ссылках (почта и телефон) в footer ===== */
+.footers-contact-link:hover,
+.footers-contact-link:focus
+
+{color: var(--color-logo-links-hover);}
+
+/* ____________________________  К О Н Е Ц  footer ______________________________________ */
+
+
+
+
+
+
+
+
+
+/* ============== Стилизация Блок-секции_1 ГЕРОЙ (hero) в portfolio.html ============== */
+
+/* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
+.btn-filters {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: inherit;
+    color: inherit;
+    background-color: var(--color-background-team);
+}
+
+/* == Выделение цветом активной кнопки в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html === */
+.btn-filters.activlink {
+    background-color: var(--color-button-hover);
+    color: var(--color-light);
+}
+
+/* =====  Hover & Focus на кнопках в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ===== */
+.btn-filters.activlink:hover,
+.btn-filters.activlink:focus,
+
+.btn-filters:hover,
+.btn-filters:focus {
+    background-color: var(--color-logo-links-hover);
+    color: var(--color-light);
+}
+
+/* ____________  К О Н Е Ц кнопки в ГЕРОЙ-ССЫЛКИ в portfolio.html ______________________ */
+
+
+
+
+
+
+
+
+/* ======================= Стилизация ПРОЕКТЫ-ГЕРОЙ в portfolio.html ======================= */
+
+/* ========== Заголовок проектов в ПРОЕКТЫ (titlе-project) в portfolio.html ==========*/
+.titlе-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+
+    color: var(--color-font-main);
+}
+
+/* ========== Заголовок фильтра в ПРОЕКТЫ (titlе-filter) в portfolio.html ==========*/
+.titlе-filter {
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--color-font-head);
+}
+
+/* __________________ К О Н Е Ц  ОСНОВНОГО Блока в portfolio.html __________________ */
