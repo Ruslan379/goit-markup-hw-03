@@ -1,3 +1,16 @@
+/* ========== Установка войства box-sizing: content-box ========== */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* ================================================================ */
+
 :root {
     /* ============ ПЕРЕМЕННЫЕ ЦВЕТА ============ */
     --color-font-main: #212121;
@@ -21,6 +34,7 @@
 
 
 body {
+    margin: 0;
 
     color: var(--color-font-main);
     background-color: var(--color-light);
@@ -29,6 +43,18 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+
+    outline: 2px solid tomato;
 }
 
 
@@ -62,6 +88,9 @@ body {
 
 /* --- Задаем ВСЕМ кнопкам тип курсора pointer ------ */
 .buttons {cursor: pointer;}
+
+/* --- Убираем у всех заголовков ------ */
+
 
 /* _____________________________  К О Н Е Ц Типографика _____________________________ */
 
