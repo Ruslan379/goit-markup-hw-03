@@ -39,7 +39,7 @@ body {
 /* =============================== */
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    line-height: 1.71;
+    /* line-height: 1.71; */
     letter-spacing: 0.03em;
 }
 
@@ -245,6 +245,7 @@ body {
 
 /* ==== Стилизация Текста p в (в Наши особенности (features) ==== */
 .features-description {
+    line-height: 1.71;
 
     color: var(--color-font-head);
 }
@@ -297,7 +298,7 @@ body {
 .team-position {
     font-size: 16px;
     line-height: 1.19;
-    
+
     color: #757575;
 }
 
@@ -334,14 +335,15 @@ body {
 /* ============= Стилизация ВСЕХ строк Блока АДРЕС в footer ============= */
 .addresses {
     font-style: normal;
-        
+    line-height: 1.71;
+
     color: var(--color-light);
 }
 
 /* == Изменение цвета шрифта (почта и телефон) в Блоке АДРЕС  в footer == */
 .footers-contact-link {
     font-style: normal;
-    
+    line-height: 1.71;
     color: var(--color-font-footer);
 }
 
