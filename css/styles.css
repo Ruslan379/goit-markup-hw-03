@@ -43,6 +43,7 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* =========================== Контейнер =========================== */
 .container {
     width: 1200px;
     /* height: 100px; */
@@ -71,6 +72,8 @@ body {
 /* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
  и в Блок-секция_4 Наша команда (team) === */
 .section-titles {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.67;
@@ -80,7 +83,11 @@ body {
 
 /* --------- Убираем точки со ВСЕХ списков --------- */
 /* ul {list-style-type: none;} */
-.lists {list-style-type: none;}
+.lists {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 /* ------ Убираем подчеркивание со ВСЕХ ссылок ------ */
 /* a {text-decoration: none;} */
@@ -106,7 +113,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-   
+
     color: var(--color-logo-links-hover);
 }
 
@@ -178,19 +185,25 @@ body {
 
 /* ============ Цвет фона в Блок-секции_1 ГЕРОЙ (hero) ============ */
 .hero {
+    text-align: center;
     background-color: var(--color-background-footer);
 }
 
 /* ============= Стилизация заголовка в ГЕРОЙ (hero-title) ======== */
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
     color: var(--color-light);
+
+    outline: 2px solid tomato;
 }
 
 
@@ -203,6 +216,7 @@ body {
     
     padding: 10px 32px;
     min-width: 200px;
+    height: 50px;
 
 
     font-family: inherit;
@@ -224,6 +238,15 @@ body {
     background-color: var(--color-button-hover);
 }
 
+/* =========================== Контейнер  (.hero .container)=========================== */
+.hero .container {
+    height: 600px;
+    padding: 200px 252px 280px 252px;
+}
+
+
+
+
 /* _________________________  К О Н Е Ц   Блок-секции_1 ГЕРОЙ (hero) _________________________ */
 
 
@@ -234,17 +257,24 @@ body {
 
 /* ======= Стилизация Блок-секция_2 Наши особенности (features) ======= */
 
+.features {
+
+}
 /* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
 .features-title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
 
     color: var(--color-font-main);
-   }
+}
 
 /* ==== Стилизация Текста p в (в Наши особенности (features) ==== */
 .features-description {
+    margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.71;
 
     color: var(--color-font-head);
@@ -286,6 +316,8 @@ body {
 
 /* ======= Заголовок h3 в Наша команда (team-item) > (team-name)  ======*/
 .team-name {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -296,6 +328,8 @@ body {
 
 /* ========== Текст в Наша команда (team-item) > (team-position) ==========*/
 .team-position {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.19;
 
@@ -304,6 +338,7 @@ body {
 
 /* ======= Цвет фона карточки члена команды (team-item) ======= */
 .team-item {
+    
     background-color: var(--color-light);
 }
 
