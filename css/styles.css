@@ -68,12 +68,16 @@ body {
     position: absolute;
 }
 
+/* ========== Сброс отступов у ВСЕХ заголовков и ВСЕГО текста ========== */
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
  и в Блок-секция_4 Наша команда (team) === */
 .section-titles {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.67;
@@ -81,7 +85,7 @@ body {
 }
 
 
-/* --------- Убираем точки со ВСЕХ списков --------- */
+/* --------- Убираем точки и ВЕРХ и НИЗ отступы со ВСЕХ списков --------- */
 /* ul {list-style-type: none;} */
 .lists {
     list-style-type: none;
@@ -122,12 +126,12 @@ body {
     color: var(--color-dark);
 }
 
-/* ============ Стилизация header (page-header) ============ */
-.page-header {
+/* ============ Стилизация header в portfolio (page-header) ============ */
+.page-header.portfolio{
+    margin-bottom: 94px;
+
     background-color: #ECECEC;
 }
-
-
 
 
 
@@ -191,7 +195,6 @@ body {
 
 /* ============= Стилизация заголовка в ГЕРОЙ (hero-title) ======== */
 .hero-title {
-    margin-top: 0;
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -203,7 +206,7 @@ body {
     
     color: var(--color-light);
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 
@@ -242,6 +245,7 @@ body {
 .hero .container {
     height: 600px;
     padding: 200px 252px 280px 252px;
+    margin-bottom: 94px;
 }
 
 
@@ -257,13 +261,18 @@ body {
 
 /* ======= Стилизация Блок-секция_2 Наши особенности (features) ======= */
 
-.features {
+.features .container {
+     height: 201px; /* 101 */
+     /* padding: 200px 252px 280px 252px; */
+    margin-bottom: 94px;
 
 }
+
+
+
 /* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
 .features-title {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
@@ -273,8 +282,7 @@ body {
 
 /* ==== Стилизация Текста p в (в Наши особенности (features) ==== */
 .features-description {
-    margin-top: 0;
-    margin-bottom: 0;
+
     line-height: 1.71;
 
     color: var(--color-font-head);
@@ -290,6 +298,14 @@ body {
 
 
 /* ============== Стилизация Блок-секция_3 Чем мы занимаемся (activities) ============== */
+
+.activities .container {
+    height: 986px; /* 386 */
+    
+    margin-bottom: 94px;
+
+}
+
 
 /* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
 вынесен в Типографику === */
@@ -310,14 +326,14 @@ body {
 вынесен в Типографику === */
 
 /* =========== Цвет фона Блок-секция_4 Наша команда (team) =========== */
-.team {
+.team .container {
+    height: 1348px;  /* 648 */
+    
     background-color: var(--color-background-team);
 }
 
 /* ======= Заголовок h3 в Наша команда (team-item) > (team-name)  ======*/
 .team-name {
-    margin-top: 0;
-    margin-bottom: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -328,8 +344,6 @@ body {
 
 /* ========== Текст в Наша команда (team-item) > (team-position) ==========*/
 .team-position {
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.19;
 
@@ -357,6 +371,15 @@ body {
 /* =============================== Стилизация footer =============================== */
 /* ====== Цвет фона в footer ====== */
 .footers {
+
+    background-color: var(--color-background-footer);
+}
+
+.footers .container {
+    height: 252px;
+    padding-top: 60px;
+    
+
     background-color: var(--color-background-footer);
 }
 
@@ -388,6 +411,25 @@ body {
 
 {color: var(--color-logo-links-hover);}
 
+
+/* Применить mpadding-bottom: 20px к элементу LOGO */
+.logo .logo-white {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+
+/* Применить margin-bottom: 9px ко всем элементам с классом list-item,
+кроме последнего */
+.list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
+
+
+
 /* ____________________________  К О Н Е Ц  footer ______________________________________ */
 
 
@@ -400,7 +442,17 @@ body {
 
 /* ============== Стилизация Блок-секции_1 ГЕРОЙ (hero) в portfolio.html ============== */
 
+
 /* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
+.button-filters .container{
+    /* display: flex; */
+    width: 611px;
+    height: 54px;
+
+}
+
+
+
 .btn-filters {
     font-family: inherit;
     font-weight: 500;
@@ -438,6 +490,15 @@ body {
 
 
 /* ======================= Стилизация ПРОЕКТЫ-ГЕРОЙ в portfolio.html ======================= */
+.projects {
+    /* display: flex; */
+    height:1360px;
+    padding-top: 120px; /* -54px */
+
+}
+
+
+
 
 /* ========== Заголовок проектов в ПРОЕКТЫ (titlе-project) в portfolio.html ==========*/
 .titlе-project {
