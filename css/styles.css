@@ -425,22 +425,17 @@ img {
 
 
 
-
-
-/* ============== Стилизация Блок-секции_1 ГЕРОЙ (hero) в portfolio.html ============== */
-
-
-/* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
-.button-filters {
+/* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
+.projects {
     padding-top: 94px;
         padding-bottom: 94px;
     
-        background-color: rgb(123, 167, 197); /* УБРАТЬ */
+        background-color: rgb(197, 123, 139); /* УБРАТЬ */
         
 }
 
 
-
+/* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
 .btn-filters {
     font-family: inherit;
     font-weight: 500;
@@ -449,6 +444,8 @@ img {
     text-align: center;
     letter-spacing: inherit;
     color: inherit;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     background-color: var(--color-background-team);
 }
 
@@ -472,19 +469,12 @@ img {
 
 
 
-
-
-
-
-
-/* ======================= Стилизация ПРОЕКТЫ-ГЕРОЙ в portfolio.html ======================= */
-.projects { }
-
-
-
-
 /* ========== Заголовок проектов в ПРОЕКТЫ (titlе-project) в portfolio.html ==========*/
 .titlе-project {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -495,6 +485,8 @@ img {
 
 /* ========== Заголовок фильтра в ПРОЕКТЫ (titlе-filter) в portfolio.html ==========*/
 .titlе-filter {
+    margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 1.88;
 
