@@ -50,6 +50,11 @@ body {
     /* background-color: tomato; */ /* УБРАТЬ */
 }
 
+/* ================ Секция - отступы 94px сверху и снизу ================ */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* ================ Скрытие заголовков (visually-hidden) ================ */
 .visually-hidden {
@@ -112,12 +117,18 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
 
-    background-color: #ECECEC; /* УБРАТЬ */
+    /* Установим стили нинжней рамки */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-border-line);
+
+    background-color: #dad8d8; /* УБРАТЬ */
 }
 
 
 /* ============ Стилизация логотипа WebStudio in header ============ */
 .logo {
+    margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -131,14 +142,57 @@ img {
     color: var(--color-dark);
 }
 
+/* ==== flex-контейнеры в разделе навигации в header ===== */
+.nav-list {
+    display: flex;
+}
+
+.nav-list .header-item +.header-item {
+    margin-left: 50px;
+
+    /* outline: 2px solid tomato; */ /* УБРАТЬ */
+}
+
+.nav-list .header-item:last-child {
+    margin-right: 331px;
+}
+
+
+.nav-contacts {
+    display: flex;
+}
+
+.nav-contacts .header-item +.header-item {
+    margin-left: 50px;
+
+    /* outline: 2px solid tomato; */ /* УБРАТЬ */
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
 /* ==== Стилизация Кнопок Основного раздела навигации в header ===== */
 .nav-links {
+    display: block;
+    
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
     
     color: inherit;
+
+    /* УБРАТЬ */
+    /* outline: 2px solid tomato;  */
 }
 
 /* ==== Выделение цветом активной страници в header в (headline) ===== */
@@ -184,6 +238,7 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+
     background-color: var(--color-background-footer);
 }
 
@@ -195,7 +250,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-     
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -205,7 +260,8 @@ img {
     
     color: var(--color-light);
 
-    outline: 2px solid rgb(20, 53, 240); /* УБРАТЬ */
+    /* УБРАТЬ */
+    /* outline: 2px solid rgb(20, 53, 240);  */
 }
 
 
@@ -248,12 +304,7 @@ img {
 
 /* ======= Стилизация Секции Наши особенности (features) ======= */
 .features {
-    padding-top: 94px;
-    padding-bottom:94px;
-    
-    background-color: rgb(181, 197, 123); /* УБРАТЬ */
-            
-
+    background-color: rgb(230, 230, 153); /* УБРАТЬ */
 }
 
 /* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
@@ -284,14 +335,13 @@ img {
 
 
 /* ============== Стилизация Секции Чем мы занимаемся (activities) ============== */
-.activities {
+.section.activities {
     padding-top: 0;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */ /* УБРАТЬ */
     
     background-color: rgb(145, 123, 197); /* УБРАТЬ */
         
 }
-
 
 
 /* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
@@ -309,11 +359,11 @@ img {
 
 /* ============== Стилизация Секции Наша команда ( ) ============== */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    /* padding-top: 94px; */
+    /* padding-bottom: 94px; */
 
     /* background-color: var(--color-background-team); */
-    background-color: goldenrod; /* УБРАТЬ */
+    background-color: goldenrod; /* УБРАТЬ и оставить var(--color-background-team */
 }
 /* === Стилизация Заголовка h2 в Блок-секция_4 Наша команда (team) 
 вынесен в Типографику === */
@@ -427,10 +477,10 @@ img {
 
 /* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
 .projects {
-    padding-top: 94px;
-        padding-bottom: 94px;
+    /* padding-top: 94px; */
+    /* padding-bottom: 94px; */
     
-        background-color: rgb(197, 123, 139); /* УБРАТЬ */
+    background-color: rgb(197, 123, 139); /* УБРАТЬ */
         
 }
 
@@ -487,7 +537,7 @@ img {
 .titlе-filter {
     margin-bottom: 20px;
 
-    font-size: 16px;
+    font-size: 16px;  
     line-height: 1.88;
 
     color: var(--color-font-head);
