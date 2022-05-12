@@ -64,6 +64,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
 
+/* =================== Сброс нижнего отступа у img =================== */
+img {
+    display: block;
+}
+
+
 /* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
  и в Блок-секция_4 Наша команда (team) === */
 .section-titles {
@@ -103,6 +109,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ============ Стилизация header в portfolio (page-header) ============ */
 .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     background-color: #ECECEC; /* УБРАТЬ */
 }
@@ -122,10 +130,6 @@ h1, h2, h3, h4, h5, h6, p {
 .logo-black {
     color: var(--color-dark);
 }
-
-
-
-
 
 
 /* ==== Стилизация Кнопок Основного раздела навигации в header ===== */
@@ -175,34 +179,23 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ========================= Стилизация ОСНОВНОГО Блока (main)========================== */
 
-
-/* =================== Стилизация Блок-секции_1 ГЕРОЙ (hero) =================== */
-
-/* ============ Цвет фона в Блок-секции_1 ГЕРОЙ (hero) ============ */
+/* ============ Стилизация Секции (hero) в ГЕРОЙ  ============ */
 .hero {
-    height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--color-background-footer);
 }
-/* =========================== Контейнер  (.hero .container)=========================== */
-.hero .container {
-    /* height: 600px; */
-    /* padding: 200px 252px 280px 252px; */
-    /* margin-bottom: 94px; */
-}
 
 
-/* ============= Стилизация заголовка в ГЕРОЙ (hero-title) ======== */
+/* ====== Стилизация заголовка h1 в ГЕРОЙ (hero-title) ===== */
 .hero-title {
-    
+    width: 696px;
     margin-top: 0;
-    margin-left: 252px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-    margin-right: 252px;
-    /* margin: 200px 252px 30px 252px; */
-    /* margin: 200px 252px 30px; */
- 
+     
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -212,7 +205,7 @@ h1, h2, h3, h4, h5, h6, p {
     
     color: var(--color-light);
 
-    outline: 2px solid tomato; /* УБРАТЬ */
+    outline: 2px solid rgb(20, 53, 240); /* УБРАТЬ */
 }
 
 
@@ -232,7 +225,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
 
     color: var(--color-light);
@@ -245,11 +238,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--color-button-hover);
 }
 
-
-
-
-
-
 /* _________________________  К О Н Е Ц   Блок-секции_1 ГЕРОЙ (hero) _________________________ */
 
 
@@ -258,16 +246,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-/* ======= Стилизация Блок-секция_2 Наши особенности (features) ======= */
-
-.features .container {
-     height: 201px; /* 101 */
-     /* padding: 200px 252px 280px 252px; */
-    margin-bottom: 94px;
+/* ======= Стилизация Секции Наши особенности (features) ======= */
+.features {
+    padding-top: 94px;
+    padding-bottom:94px;
+    
+    background-color: rgb(181, 197, 123); /* УБРАТЬ */
+            
 
 }
-
-
 
 /* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
 .features-title {
@@ -296,14 +283,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-/* ============== Стилизация Блок-секция_3 Чем мы занимаемся (activities) ============== */
-
-.activities .container {
-    height: 986px; /* 386 */
+/* ============== Стилизация Секции Чем мы занимаемся (activities) ============== */
+.activities {
+    padding-top: 0;
+    padding-bottom: 94px;
     
-    margin-bottom: 94px;
-
+    background-color: rgb(145, 123, 197); /* УБРАТЬ */
+        
 }
+
 
 
 /* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
@@ -319,20 +307,23 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-/* ===================== Стилизация Блок-секция_4 Наша команда (team) ===================== */
+/* ============== Стилизация Секции Наша команда (team) ============== */
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
+    /* background-color: var(--color-background-team); */
+    background-color: goldenrod; /* УБРАТЬ */
+}
 /* === Стилизация Заголовка h2 в Блок-секция_4 Наша команда (team) 
 вынесен в Типографику === */
 
-/* =========== Цвет фона Блок-секция_4 Наша команда (team) =========== */
-.team .container {
-    height: 1348px;  /* 648 */
-    
-    background-color: var(--color-background-team);
-}
 
 /* ======= Заголовок h3 в Наша команда (team-item) > (team-name)  ======*/
 .team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -343,6 +334,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ========== Текст в Наша команда (team-item) > (team-position) ==========*/
 .team-position {
+    margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
 
@@ -370,15 +363,10 @@ h1, h2, h3, h4, h5, h6, p {
 /* =============================== Стилизация footer =============================== */
 /* ====== Цвет фона в footer ====== */
 .footers {
-
-    background-color: var(--color-background-footer);
-}
-
-.footers .container {
-    height: 252px;
     padding-top: 60px;
+    padding-bottom: 60px;
     
-
+        
     background-color: var(--color-background-footer);
 }
 
