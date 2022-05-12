@@ -1,14 +1,3 @@
-/* ========== Установка войства box-sizing: content-box ========== */
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 /* ================================================================ */
 
 :root {
@@ -43,10 +32,13 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* =========================== Контейнер =========================== */
+
+
+
+/* ============= Типографика - ГЛОБАЛЬНАЯ Стилизация некоторых элементов ============= */
+/* ============================= Контейнер ============================= */
 .container {
     width: 1200px;
-    /* height: 100px; */
 
     margin-left: auto;
     margin-right: auto;
@@ -54,12 +46,10 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid tomato;
-    /* background-color: tomato; */
+    outline: 2px solid tomato; /* УБРАТЬ */
+    /* background-color: tomato; */ /* УБРАТЬ */
 }
 
-
-/* ============= Типографика - ГЛОБАЛЬНАЯ Стилизация некоторых элементов ============= */
 
 /* ================ Скрытие заголовков (visually-hidden) ================ */
 .visually-hidden {
@@ -88,9 +78,9 @@ h1, h2, h3, h4, h5, h6, p {
 /* --------- Убираем точки и ВЕРХ и НИЗ отступы со ВСЕХ списков --------- */
 /* ul {list-style-type: none;} */
 .lists {
-    list-style-type: none;
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 /* ------ Убираем подчеркивание со ВСЕХ ссылок ------ */
@@ -111,6 +101,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ======================= Стилизация Шапки сайта (headline) ======================= */
 
+/* ============ Стилизация header в portfolio (page-header) ============ */
+.page-header {
+
+    background-color: #ECECEC; /* УБРАТЬ */
+}
+
+
 /* ============ Стилизация логотипа WebStudio in header ============ */
 .logo {
     font-family: 'Raleway';
@@ -126,12 +123,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--color-dark);
 }
 
-/* ============ Стилизация header в portfolio (page-header) ============ */
-.page-header.portfolio{
-    margin-bottom: 94px;
-
-    background-color: #ECECEC;
-}
 
 
 
@@ -189,14 +180,29 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ============ Цвет фона в Блок-секции_1 ГЕРОЙ (hero) ============ */
 .hero {
+    height: 600px;
+    padding-top: 200px;
     text-align: center;
     background-color: var(--color-background-footer);
 }
+/* =========================== Контейнер  (.hero .container)=========================== */
+.hero .container {
+    /* height: 600px; */
+    /* padding: 200px 252px 280px 252px; */
+    /* margin-bottom: 94px; */
+}
+
 
 /* ============= Стилизация заголовка в ГЕРОЙ (hero-title) ======== */
 .hero-title {
+    
+    margin-top: 0;
+    margin-left: 252px;
     margin-bottom: 30px;
-
+    margin-right: 252px;
+    /* margin: 200px 252px 30px 252px; */
+    /* margin: 200px 252px 30px; */
+ 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -206,7 +212,7 @@ h1, h2, h3, h4, h5, h6, p {
     
     color: var(--color-light);
 
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato; /* УБРАТЬ */
 }
 
 
@@ -221,12 +227,10 @@ h1, h2, h3, h4, h5, h6, p {
     min-width: 200px;
     height: 50px;
 
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* display: flex; */
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -241,12 +245,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--color-button-hover);
 }
 
-/* =========================== Контейнер  (.hero .container)=========================== */
-.hero .container {
-    height: 600px;
-    padding: 200px 252px 280px 252px;
-    margin-bottom: 94px;
-}
+
 
 
 
