@@ -307,7 +307,7 @@ img {
 
 
 
-/* ============== Стилизация Секции Наша команда (team) ============== */
+/* ============== Стилизация Секции Наша команда ( ) ============== */
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -431,11 +431,12 @@ img {
 
 
 /* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
-.button-filters .container{
-    /* display: flex; */
-    width: 611px;
-    height: 54px;
-
+.button-filters {
+    padding-top: 94px;
+        padding-bottom: 94px;
+    
+        background-color: rgb(123, 167, 197); /* УБРАТЬ */
+        
 }
 
 
@@ -477,12 +478,7 @@ img {
 
 
 /* ======================= Стилизация ПРОЕКТЫ-ГЕРОЙ в portfolio.html ======================= */
-.projects {
-    /* display: flex; */
-    height:1360px;
-    padding-top: 120px; /* -54px */
-
-}
+.projects { }
 
 
 
