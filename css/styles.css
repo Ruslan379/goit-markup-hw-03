@@ -47,7 +47,7 @@ body {
     padding-right: 15px;
 
     /* УБРАТЬ */
-    outline: 2px solid tomato; 
+    /* outline: 2px solid tomato;  */
     /* background-color: tomato; */ 
 }
 
@@ -615,8 +615,8 @@ justify-content: space-between;
 .titlе-project {
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
     
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -628,6 +628,7 @@ justify-content: space-between;
 /* ========== Заголовок фильтра в ПРОЕКТЫ (titlе-filter) в portfolio.html ==========*/
 .titlе-filter {
     margin-bottom: 20px;
+    margin-left: 24px;
 
     font-size: 16px;  
     line-height: 1.88;
