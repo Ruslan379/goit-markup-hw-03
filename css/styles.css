@@ -38,7 +38,7 @@ body {
 /* ============= Типографика - ГЛОБАЛЬНАЯ Стилизация некоторых элементов ============= */
 /* ============================= Контейнер ============================= */
 .container {
-    width: 1200px;
+    width: 1230px;
 
     margin-left: auto;
     margin-right: auto;
@@ -46,8 +46,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid tomato; /* УБРАТЬ */
-    /* background-color: tomato; */ /* УБРАТЬ */
+    /* УБРАТЬ */
+    outline: 2px solid tomato; 
+    /* background-color: tomato; */ 
 }
 
 /* ================ Секция - отступы 94px сверху и снизу ================ */
@@ -101,9 +102,6 @@ img {
 /* --- Задаем ВСЕМ кнопкам тип курсора pointer ------ */
 .buttons {cursor: pointer;}
 
-/* --- Убираем у всех заголовков ------ */
-
-
 /* _____________________________  К О Н Е Ц Типографика _____________________________ */
 
 
@@ -122,13 +120,15 @@ img {
     border-bottom-style: solid;
     border-bottom-color: var(--color-border-line);
 
-    background-color: #dad8d8; /* УБРАТЬ */
+    /* УБРАТЬ */
+    /* background-color: #dad8d8;  */
 }
 
 
 /* ============ Стилизация логотипа WebStudio in header ============ */
 .logo {
-    margin-right: 93px;
+    /* margin-right: 93px; */
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -145,27 +145,32 @@ img {
 /* ==== flex-контейнеры в разделе навигации в header ===== */
 .nav-list {
     display: flex;
+    margin-left: 93px;
 }
 
 .nav-list .header-item +.header-item {
     margin-left: 50px;
 
-    /* outline: 2px solid tomato; */ /* УБРАТЬ */
+    /* УБРАТЬ */
+    /* outline: 2px solid tomato; */ 
 }
 
 .nav-list .header-item:last-child {
-    margin-right: 331px;
+    /* margin-right: 331px; */
 }
 
 
 .nav-contacts {
     display: flex;
+    /* margin-left: 331px; */
+    margin-left: auto;
 }
 
 .nav-contacts .header-item +.header-item {
     margin-left: 50px;
 
-    /* outline: 2px solid tomato; */ /* УБРАТЬ */
+    /* УБРАТЬ */
+    /* outline: 2px solid tomato; */ 
 }
 
 .navigation {
@@ -176,6 +181,7 @@ img {
 .main-nav {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 /* ==== Стилизация Кнопок Основного раздела навигации в header ===== */
@@ -303,9 +309,19 @@ img {
 
 
 /* ======= Стилизация Секции Наши особенности (features) ======= */
-.features {
-    background-color: rgb(230, 230, 153); /* УБРАТЬ */
+.features1 {
+    /* УБРАТЬ */
+    /* background-color: rgb(230, 230, 153);  */
 }
+
+
+/* ==== flex-контейнер в Секции Наши особенности (features) ===== */
+.features-list {
+display: flex;
+justify-content: space-between;
+}
+
+
 
 /* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
 .features-title {
@@ -317,10 +333,19 @@ img {
     color: var(--color-font-main);
 }
 
+.features-list .features-item {
+    width: 270px;
+    /* УБРАТЬ */
+    /* background-color: tomato; */
+}
+
+
+
 /* ==== Стилизация Текста p в (в Наши особенности (features) ==== */
 .features-description {
-
     line-height: 1.71;
+
+    /* width: 270px; */
 
     color: var(--color-font-head);
 }
@@ -337,10 +362,18 @@ img {
 /* ============== Стилизация Секции Чем мы занимаемся (activities) ============== */
 .section.activities {
     padding-top: 0;
-    /* padding-bottom: 94px; */ /* УБРАТЬ */
-    
-    background-color: rgb(145, 123, 197); /* УБРАТЬ */
+
+    /* УБРАТЬ */
+    /* padding-bottom: 94px; */ 
+        /* УБРАТЬ */
+    /* background-color: rgb(145, 123, 197);  */
         
+}
+
+/* ==== flex-контейнер в Секции Наши особенности (activity) ===== */
+.activity {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -357,14 +390,25 @@ img {
 
 
 
-/* ============== Стилизация Секции Наша команда ( ) ============== */
+/* ============== Стилизация Секции Наша команда (team) ============== */
 .team {
     /* padding-top: 94px; */
     /* padding-bottom: 94px; */
 
-    /* background-color: var(--color-background-team); */
-    background-color: goldenrod; /* УБРАТЬ и оставить var(--color-background-team */
+    background-color: var(--color-background-team);
+
+    /* УБРАТЬ и оставить var(--color-background-team */
+    /* background-color: goldenrod;  */
 }
+
+/* ==== flex-контейнер в Секции Секции Наша команда (team) ===== */
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 /* === Стилизация Заголовка h2 в Блок-секция_4 Наша команда (team) 
 вынесен в Типографику === */
 
@@ -388,12 +432,17 @@ img {
 
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 
     color: #757575;
 }
 
 /* ======= Цвет фона карточки члена команды (team-item) ======= */
 .team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     
     background-color: var(--color-light);
 }
@@ -462,11 +511,6 @@ img {
     margin-bottom: 9px;
 }
 
-
-
-
-
-
 /* ____________________________  К О Н Е Ц  footer ______________________________________ */
 
 
@@ -480,13 +524,30 @@ img {
     /* padding-top: 94px; */
     /* padding-bottom: 94px; */
     
-    background-color: rgb(197, 123, 139); /* УБРАТЬ */
+    /* УБРАТЬ */
+    /* background-color: rgb(197, 123, 139); */
         
 }
 
 
+/* ==== flex-контейнер в Секции ГЕРОЙ-ССЫЛКИ (filters) ===== */
+.filters-list {
+    display: flex;
+    justify-content: center;
+}
+
+.filters-list .filters-item+.filters-item {
+    margin-left: 8px;
+}
+
+
+
 /* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
 .btn-filters {
+    display: inline-block;
+    padding: 6px 22px;
+    margin-bottom: 50px;
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -494,8 +555,11 @@ img {
     text-align: center;
     letter-spacing: inherit;
     color: inherit;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+
     background-color: var(--color-background-team);
 }
 
@@ -518,6 +582,42 @@ img {
 /* ____________  К О Н Е Ц кнопки в ГЕРОЙ-ССЫЛКИ в portfolio.html ______________________ */
 
 
+/* ==== flex-контейнер в Секции ГЕРОЙ-ССЫЛКИ (filters) ===== */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* =========== Нижняя рамка в карточке (project-card) =========== */
+.project-card {
+    display: block;
+
+    /* border: 1px solid #EEEEEE; */
+       /* Установит стили правой рамки */
+    border-right-width:1px;
+    border-right-style: solid;
+    border-right-color: var(--color-borders-portfolio);
+
+        /* Установит стили нинжней рамки */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-borders-portfolio);
+
+        /* Установит стили левой рамки */
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--color-borders-portfolio);
+
+    outline: 2px solid tomato;
+}
+
+.project-card1 {
+
+    border:2px solid rgb(20, 4, 255);
+    outline: 3px solid tomato;
+}
 
 /* ========== Заголовок проектов в ПРОЕКТЫ (titlе-project) в portfolio.html ==========*/
 .titlе-project {
